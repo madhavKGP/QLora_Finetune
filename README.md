@@ -1,8 +1,8 @@
-# 🤖 QLoRA Fine-Tuning: Siamese Ranking for Chatbot Arena
+# QLoRA Fine-Tuning:
 
-This project demonstrates an advanced, highly efficient methodology for fine-tuning a pre-trained Transformer encoder (e.g., **DeBERTa-v3-xsmall**) to solve a comparative ranking task. It trains a model to predict the winner between two competing language model responses (**Model A vs. Model B**) based on human preference data (e.g., the **LMSys Chatbot Arena** dataset).
+This project demonstrates an advanced, highly efficient methodology for fine-tuning a pre-trained Transformer encoder (e.g., **DeBERTa-v3-small**) to solve a comparative ranking task. It trains a model to predict the winner between two competing language model responses (**Model A vs. Model B**) based on human preference data (e.g., the **LMSys Chatbot Arena** dataset).
 
-The entire pipeline is optimized for memory and speed using **QLoRA** and is structured for robust training on **TPU v5e clusters** using **PyTorch/XLA**.
+The entire pipeline is optimized for memory and speed using **QLoRA** and is structured for robust training on **L40S GPU** using **PyTorch**.
 
 ---
 
@@ -34,7 +34,7 @@ $$
 | All Params | $141,967,872$ |
 | **Trainable %** | **$0.4674\%$** |
 
-**Checkpoint Size:** Only the tiny adapter matrices are saved — measured in **MB**, not **GB**.
+**Checkpoint Size:** Only the tiny adapter matrices are saved — measured in **MB**, not **GB**, 2.5MB in our case.
 
 ---
 
