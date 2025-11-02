@@ -6,5 +6,4 @@ model/
 .vscode-server
 .vscode/settings.json
 .windsurf-server
-best_model_checkpoint/
 data/
