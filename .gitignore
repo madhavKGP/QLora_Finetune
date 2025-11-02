@@ -1,0 +1,10 @@
+model/
+.config/
+.lightning_studio/
+.cursor-server
+.idea/
+.vscode-server
+.vscode/settings.json
+.windsurf-server
+best_model_checkpoint/
+data/
